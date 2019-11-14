@@ -3,12 +3,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-//Table in the database
+
 @Entity
 public class Student {
-    //Primary key
     @Id
-    //Automaticaly create a unique key
     @GeneratedValue
     private int id;
     private String FirstName;
