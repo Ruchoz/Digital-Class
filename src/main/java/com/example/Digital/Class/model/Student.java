@@ -1,16 +1,16 @@
 package com.example.Digital.Class.model;
-
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+//Table in the database
 @Entity
-public class ggiStudent {
+public class Student {
+    //Primary key
     @Id
+    //Automaticaly create a unique key
     @GeneratedValue
     private int id;
-
     private String FirstName;
     private String Lastname;
     private int BirthDay;
@@ -46,10 +46,6 @@ public class ggiStudent {
 
     public int getBirthDay() { return BirthDay; }
     public void setBirthDay(int BirthDay) {this.BirthDay= BirthDay;}
-
-
-
-
 
 }
 

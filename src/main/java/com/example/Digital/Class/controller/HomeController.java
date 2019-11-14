@@ -2,7 +2,7 @@ package com.example.Digital.Class.controller;
 
 import com.example.Digital.Class.model.Student;
 
-import data.StudentDao;
+import com.example.Digital.Class.repository.StudentDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -38,11 +38,5 @@ public class HomeController {
     public String displaysignin(){
 
         return "signin";
-
-
-
     }
-
-
-
 }

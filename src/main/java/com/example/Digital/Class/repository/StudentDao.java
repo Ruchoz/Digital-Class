@@ -1,4 +1,4 @@
-package data;
+package com.example.Digital.Class.repository;
 
 import com.example.Digital.Class.model.Student;
 import org.springframework.data.repository.CrudRepository;
