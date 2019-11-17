@@ -20,7 +20,8 @@ public class HomeController {
     private StudentDao studentDao;
 
     @RequestMapping(value = "signup")
-    public String displaySignUp() {
+    public String displaySignUp(Model model) {
+        model.addAttribute("student", new Student());
         return "signup";
     }
 
@@ -29,7 +30,6 @@ public class HomeController {
         if (errors.hasErrors()) {
             return "signup";
         }
-
         studentDao.save(student);
         return "signin";
         }

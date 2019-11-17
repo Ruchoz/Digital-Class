@@ -10,40 +10,91 @@ public class Student {
     @GeneratedValue
     private int id;
     private String FirstName;
-    private String Lastname;
-    private int BirthDay;
-    private String Course;
+    private String lastName;
+    private int birthDay;
+    private String course;
+    private String email;
+    private String password;
+    private String address;
+
 
     public Student() {}
 
-    public Student(String FirstName,String LastName,int Birthday,String Course ){
+    public Student(String FirstName,String lastname,int birthDay,String course,String address,String password,String email ){
         this.FirstName= FirstName;
-        this.Lastname=LastName;
-        this.BirthDay=BirthDay;
-        this.Course=Course;
+        this.lastName=lastname;
+        this.birthDay=birthDay;
+        this.course=course;
+        this.address=address;
+        this.email=email;
+        this.password=password;
+
+
+        public String getFirstName (){
+            return FirstName;
+        }
+        public void setFirstName(String FirstName){
+            this.FirstName= FirstName;
+        }
+        public String getPassword() {
+            return password;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public void setPassword(String password) {
+            this.password = password;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+
+        public String getAddress() {
+            return address;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+
+        public int getBirthDay() {
+            return birthDay;
+        }
+
+        public void setBirthDay(int birthDay) {
+            this.birthDay = birthDay;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+
+        public String getCourse() {
+            return course;
+        }
+
+        public void setCourse(String course) {
+            this.course = course;
+        }
+
 
     }
 
-    public int getId() {
-        return id;
+    public int getBirthDay() {
+        return birthDay;
     }
 
-    public String getFirstName() {
-        return FirstName;
+    public void setBirthDay(int birthDay) {
+        this.birthDay = birthDay;
     }
-    public void setFirstName(String firstName){
-        this.FirstName= firstName;
-    }
-
-    public String getLastName() {
-        return Lastname;
-    }
-    public void setLastName(String lastName) {
-        this.Lastname = lastName;
-    }
-
-    public int getBirthDay() { return BirthDay; }
-    public void setBirthDay(int BirthDay) {this.BirthDay= BirthDay;}
-
-}
 
